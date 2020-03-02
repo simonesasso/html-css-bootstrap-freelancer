@@ -61,3 +61,13 @@ li{
   color: white;
   padding: 2%;
 }
+/* MEDIA-QUERY------------------------------------------------*/
+@media screen and (max-width: 768px){
+  #start-boot{
+    display: none;
+  }
+  .float-right-li{
+    float: left;
+
+  }
+}
