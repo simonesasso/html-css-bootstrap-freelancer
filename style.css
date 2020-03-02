@@ -68,6 +68,12 @@ li{
   }
   .float-right-li{
     float: left;
-
   }
+  #jumbotron{
+    margin-top: 14%;
+  }
+  li{
+    padding: 1.9%;
+  }
+
 }
