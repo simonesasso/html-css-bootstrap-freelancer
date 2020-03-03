@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
     </script>
+
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap-freelance</title>
   </head>
@@ -18,6 +22,8 @@
      <div class="container">
 
 
+      <div class="nav-contenitore">
+
          <ul>
            <li id="start-boot"><strong>START BOOTSTRAP</strong></li>
            <li class="float-right-li"><strong>PORTFOLIO</strong></li>
@@ -25,28 +31,51 @@
            <li class="float-right-li"><strong>CONTACT</strong></li>
          </ul>
 
-      
+         <!-- Small button group -->
+       <div class="btn-group" id="btn">
+        <button class="btn btn-sm dropdown-toggle btn-color" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Menu <span class="caret"></span>
+        </button>
 
+          <ul class="dropdown-menu">
+           <li class="li-drop"><strong>CONTACT</strong></li>
+           <li class="li-drop"><strong>ABOUT</strong></li>
+           <li class="li-drop"><strong>PORTFOLIO</strong></li>
+          </ul>
+
+       </div>
+      </div>
 
 
      </div>
     </nav>
     <!-- JUMBOTRON------------------------------------------------------->
-    <div class="container-fluid text-center" id="jumbotron">
-      <div class="row">
-        <div class="col-xs-12">
-          <img src="immagini/avatar.svg" alt="avatar" id="avatar">
-          <h1><strong>START BOOTSTRAP</strong></h1>
-          <p>Graphic Artist - Web Designer - Illustrator</p>
+    <div class="text-center" id="jumbotron">
+     <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="immagini/avatar.svg" alt="avatar" id="avatar">
+            <h1><strong>START BOOTSTRAP</strong></h1>
+            <div class="stella-contenitore">
+              <div class="stella"></div><span class="stella-img">&starf;</span><div class="stella"></div>
+            </div>
+
+
+            <p>Graphic Artist - Web Designer - Illustrator</p>
+          </div>
         </div>
-      </div>
+
+     </div>
     </div>
 <!-- SECTION PORTFOLIO---------------------------------------------------->
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
           <h1>PORTFOLIO</h1>
-
+          <div class="stella-contenitore">
+            <div class="stella stella-blu"></div><span class="stella-img" id="stella-blu">&starf;</span><div class="stella stella-blu"></div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -80,44 +109,55 @@
 
 
     </div>
-    <!-- ABOUT-SECTION----------------------------------------------------------- -->
-    <div class="container-fluid text-center" id="about">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>ABOUT</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-12 col-lg-3 col-lg-offset-3">
-          <p class="p-about">
-            Freelancer is a free bootstrap theme created by Start Bootstrap.
-            The download includes the complete source files including HTML,
-            CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-          </p>
+    <!-- ABOUT-SECTION------------------------------------------------------------->
+    <div id="about" class="text-center">
+     <div class="container-fluid">
 
-        </div>
-        <div class="col-xs-12 col-md-12 col-lg-3">
-          <p class="p-about">
-            You can create your own custom avatar for the masthead,
-            change the icon in the dividers,
-            and add your email address to the contact form to make
-            it fully functional!
-          </p>
-
-        </div>
-      </div>
       <div class="row">
-        <div class="col-xs-12">
-          <button class="btn btn-default" type="submit">Free download</button>
 
-        </div>
-      </div>
+         <div class="col-xs-12">
+           <h1>ABOUT</h1>
+           <div class="stella-contenitore">
+             <div class="stella"></div><span class="stella-img">&starf;</span><div class="stella"></div>
+           </div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-xs-12 col-md-12 col-lg-3 col-lg-offset-3">
+           <p class="p-about">
+             Freelancer is a free bootstrap theme created by Start Bootstrap.
+             The download includes the complete source files including HTML,
+             CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+           </p>
+
+         </div>
+         <div class="col-xs-12 col-md-12 col-lg-3">
+           <p class="p-about">
+             You can create your own custom avatar for the masthead,
+             change the icon in the dividers,
+             and add your email address to the contact form to make
+             it fully functional!
+           </p>
+
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-xs-12">
+           <button class="btn btn-default" type="submit">Free download</button>
+
+         </div>
+       </div>
+
+
+     </div>
     </div>
     <!-- CONTACT-ME-SECTION-------------------------------------------------->
     <div class="container">
       <div class="row text-center">
         <h1>CONTACT ME</h1>
-
+        <div class="stella-contenitore">
+          <div class="stella stella-blu"></div><span class="stella-img" id="stella-blu">&starf;</span><div class="stella stella-blu"></div>
+        </div>
       </div>
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
@@ -142,8 +182,9 @@
      </div>
    </div>
    <!-- FOOTER----------------------------------------------------->
+  <div id="footer">
    <div class="container-fluid">
-     <div class="row"  id="footer">
+     <div class="row">
        <div class="col-xs-12 col-lg-3 col-lg-offset-1  text-center">
          <h2>LOCATION</h2>
          <p>
@@ -171,11 +212,16 @@
        </div>
 
      </div>
+    </div>
+    </div>
+     <div id="copy">
      <div class="row">
-       <div class="col-xs-12 text-center" id="copy">
+       <div class="col-xs-12 text-center">
          <span>Copyright &copy; Your Website 2019</span>
        </div>
      </div>
-   </div>
+    </div>
+
+
  </body>
 </html>
